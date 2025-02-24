@@ -1,0 +1,170 @@
+/* poppins-200 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    src: url('./fonts/poppins-v22-latin-200.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('./fonts/poppins-v22-latin-200.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+  
+  /* poppins-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/poppins-v22-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('./fonts/poppins-v22-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+  
+  /* poppins-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/poppins-v22-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('./fonts/poppins-v22-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+
+  :root {
+    --clrRed: hsl(0, 78%, 62%);
+    --clrCyan: hsl(180, 62%, 55%);
+    --clrOrange: hsl(34, 97%, 64%);
+    --clrBlue: hsl(212, 86%, 64%);
+    
+    --clrGrey-500: hsl(234, 12%, 34%);
+    --clrGrey-400: hsl(212, 6%, 44%);
+    --clrWhite: hsl(0, 0%, 100%);
+  }
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.4em;
+    color: var(--clrGrey-400);
+  }
+
+
+  /* header section */
+  .hero {
+    text-align: center;
+    width: 80%;
+    max-width: 532px;
+    margin: clamp(3.6em, 15vw, 100px) auto 0 auto;
+  }
+
+  .header__intro {
+    font-size: clamp(22px, 2vw, 36px);
+    font-weight: 400;
+    margin-bottom: .75rem;
+  }
+
+  .header__title {
+    font-size: clamp(24px, 3vw, 36px);
+    color: var(--clrGrey-500);
+    margin-bottom: .75em;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1120px;
+    margin: clamp(3.6em, 5vw, 4.6em) auto 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 350px));
+    justify-content: center;
+    gap: 32px;
+  }
+  /* end of header section */
+
+
+  /* main section */
+  .card {
+    width: 100%;  
+    max-width: 350px;
+    height: 250px;
+    padding: 32px;
+    
+
+    border-radius: 0.53em;
+    box-shadow: 0 4px 8px 4px hsl(234, 12%, 34%, 15%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card_title {
+    font-size: 1.333em;
+    font-weight: 600;
+  }
+
+  .card_icon {
+    width: 64px;
+    align-self: flex-end;
+  }
+
+  .supervisor {
+    border-top: 4px solid var(--clrCyan);
+  }
+
+  .team-builder {
+    border-top: 4px solid var(--clrRed);
+  }
+
+  .karma {
+    border-top: 4px solid var(--clrOrange);
+  }
+
+  .calculator {
+    border-top: 4px solid var(--clrBlue);
+  }
+  /* end of main section */
+
+  /* footer section */
+  .attribution { 
+    font-size: 11px;
+    /* text-align: center; */
+    margin: 1.5rem auto clamp(4em, 5vw, 5em) auto; 
+  }
+  
+  .attribution a {
+        /* color: hsl(228, 45%, 44%); */
+        text-decoration: none;
+        margin-bottom: 
+  }
+  /* end of footer section */
+  
+
+  /* dekstop view */
+  @media (min-width: 1250px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .supervisor {
+      grid-area: 2 / 1 / 4 / 2;
+    }
+  
+    .team-builder {
+      grid-area: 1 / 2 / 3 / 3;
+    }
+  
+    .karma {
+      grid-area: 3 / 2 / 5 / 3;
+    }
+  
+    .calculator {
+      grid-area: 2 / 3 / 4 / 4;
+    }
+  }
+
+
+
+  
