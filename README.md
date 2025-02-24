@@ -31,7 +31,7 @@ Users should be able to:
 ### Screenshot
 
 ### Dekstop Screenshot
-![Dekstop Screenshot](./dekstop-screenshot.png/screenshot.jpg)
+![Dekstop Screenshot](./dekstop-screenshot.png)
 
 ### Mobile Screenshot
 ![Mobile Screenshot](./mobile-screenshot.png)
